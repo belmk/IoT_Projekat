@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3-bitni binarni kalkulator</title>
+<style>
+    h1,p {
+        text-align: center;
+    }
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+    form {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    input[type="number"] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+    }
+    #saberiBtn, #oduzmiBtn, #pomnoziBtn, #podijeliBtn {
+        background-color: #4CAF50; 
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    #resetBtn{
+      background-color: #d21010; 
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    #minus, #plus{
+      background-color: #3410d2; 
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    #result, #binary, #vrijednost{
+        color: green;
+        font-weight: bold;
+    }
+  </style>
+  <script>  
+    
+    
+    
+  </script>
+</head>
+<body>
+  <h1>3-bitni binarni kalkulator</h1>
+  <form>
+    <label for="num1">Prvi broj:</label>
+    <input type="number" id="num1" name="num1" required>
+    <br>
+    <label for="num2">Drugi broj:</label>
+    <input type="number" id="num2" name="num2" required>
+    <br><br>
+    <button type="button" id="saberiBtn">Saberii</button>
+    <button type="button" id="oduzmiBtn">Oduzmi</button>
+    <button type="button" id="pomnoziBtn">Pomnoži</button>
+    <button type="button" id="podijeliBtn">Podijeli</button>
+    <button type="button" id="resetBtn">Reset</button>
+    <button type="button" id="minus">-</button>
+    <button type="button" id="plus">+</button>
+  </form>
+  <br>
+  <p>Rezultat: <span id="result"></span></p>
+  <p>Rezultat (binarno): <span id="binary"></span></p>
+  <p id="vrijednost">0</p>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+<script type="module" src="./code.js"></script>
+</body>
+</html>
